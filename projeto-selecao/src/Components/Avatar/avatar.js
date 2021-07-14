@@ -3,6 +3,7 @@ import logo from './Ellipse 1.png';
 import './avatar.css';
 
 const Avatar = ({ avatar }) => (
+
     <div className="avatar">
 
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -20,4 +21,4 @@ const Avatar = ({ avatar }) => (
 
 )
 
-export default Avatar;
+font-family: 'Nunito';
