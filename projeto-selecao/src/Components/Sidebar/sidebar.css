@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -37,11 +39,11 @@
     font-size: 20px;
     line-height: 27px;
     font-weight: 700;
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
 
     color: #727272;
 
-    
+    white-space: nowrap;
 }
 
 .conteiner .sidebar .sidebar-avatar__curse {
@@ -55,13 +57,12 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
     
 
     /* identical to box height */
 
     color: #727272;
-
 }
 
 .conteiner .sidebar .sidebar-menu__dashboard{
@@ -71,7 +72,7 @@
     left: 67px;
     top: 302px;
 
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -89,7 +90,7 @@
     left: 67px;
     top: 362px;
 
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -99,5 +100,5 @@
 
     color: #6A6A6A;
 
-
+    white-space: nowrap;
 }
