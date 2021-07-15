@@ -6,17 +6,20 @@
     box-sizing: border-box;
   }
 
-.conteiner {
-    display: grid;
-    grid-template-columns: 336px 1fr;
-    height: 100vh;
-}
 
 .conteiner .sidebar {
-    display: flex;
-    flex-direction: column;
+    position: fixed;
+    width: 336px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    text-align: center;
     background: #FAFAFA;
-    padding: 30px;
+    padding: 85px 0px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    
 }
 
 .conteiner .sidebar .sidebar-avatar__image {
@@ -25,6 +28,7 @@
     height: 90px;
     left: 123px;
     top: 85px;
+    border-radius: 50%;
 }
 
 .conteiner .sidebar .sidebar-avatar__name {
@@ -46,7 +50,7 @@
     white-space: nowrap;
 }
 
-.conteiner .sidebar .sidebar-avatar__curse {
+.conteiner .sidebar .sidebar-avatar__course {
     position: absolute;
     width: 148px;
     height: 19px;
