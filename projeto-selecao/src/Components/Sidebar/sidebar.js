@@ -1,15 +1,15 @@
 import React from 'react';
 import './sidebar.css';
 
-const Sidebar = ({ sidebar }) => (
+const Sidebar = ({ user, sidebar}) => (
 
     <div className="conteiner">
 
         <div className="sidebar">
             <div>
-                <img src={sidebar.image} alt="Foto do perfil" className="sidebar-avatar__image" />
-                <h1 className="sidebar-avatar__name">{sidebar.name}</h1>
-                <p className="sidebar-avatar__course">{sidebar.course}</p>
+                <img src={user.avatar} alt="Foto do perfil" className="sidebar-avatar__image" />
+                <h1 className="sidebar-avatar__name">{user.name}</h1>
+                <p className="sidebar-avatar__course">{user.course}</p>
             </div>
             <div className="menu">
                 <button type="button" className="sidebar-menu__dashboard" >{sidebar.dashboard}</button>
