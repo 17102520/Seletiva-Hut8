@@ -6,6 +6,11 @@
     box-sizing: border-box;
   }
 
+button {
+    border: none;
+    background: #FAFAFA;
+    cursor: pointer;
+}
 
 .conteiner .sidebar {
     position: fixed;

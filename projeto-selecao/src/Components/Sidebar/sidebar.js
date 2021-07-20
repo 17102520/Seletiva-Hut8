@@ -12,8 +12,8 @@ const Sidebar = ({ sidebar }) => (
                 <p className="sidebar-avatar__course">{sidebar.course}</p>
             </div>
             <div className="menu">
-                <h1 className="sidebar-menu__dashboard">{sidebar.dashboard}</h1>
-                <h1 className="sidebar-menu__area">{sidebar.myarea}</h1>
+                <button type="button" className="sidebar-menu__dashboard" >{sidebar.dashboard}</button>
+                <button type="button" className="sidebar-menu__area">{sidebar.myarea}</button>
             </div>
         </div>
     </div>
