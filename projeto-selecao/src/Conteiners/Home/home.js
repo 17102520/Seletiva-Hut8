@@ -3,10 +3,8 @@ import './home.css'
 import { FaGraduationCap, FaUserGraduate } from 'react-icons/fa';
 import { GrUnorderedList } from 'react-icons/gr'
 
-import Sidebar from '../../Components/Sidebar/sidebar'
 import Card from '../../Components/Card/card'
 import Rectangle from '../../Components/Rectangle/rectangle'
-import Cardlist from '../../Components/CardList/cardlist'
 
 // Dados para os retângulos e o seu .map para percorrer os dados e coloca-los em cada retângulo
 const recs = [
