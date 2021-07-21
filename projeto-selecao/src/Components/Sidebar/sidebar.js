@@ -1,5 +1,6 @@
 import React from 'react';
 import './sidebar.css';
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = ({ user, sidebar}) => (
 
@@ -12,8 +13,8 @@ const Sidebar = ({ user, sidebar}) => (
                 <p className="sidebar-avatar__course">{user.course}</p>
             </div>
             <div className="menu">
-                <button type="button" className="sidebar-menu__dashboard" >{sidebar.dashboard}</button>
-                <button type="button" className="sidebar-menu__area">{sidebar.myarea}</button>
+                <NavLink to='/' className="sidebar-menu__dashboard" >{sidebar.dashboard}</NavLink>
+                <NavLink to='/courses' className="sidebar-menu__area">{sidebar.myarea}</NavLink>
             </div>
         </div>
     </div>

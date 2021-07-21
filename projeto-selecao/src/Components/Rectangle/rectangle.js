@@ -2,13 +2,18 @@ import React from 'react';
 import './rectangle.css';
 import { FaGraduationCap } from 'react-icons/fa';
 
-const Rectangle = ({ status, user }) => (
+function Rectangle(props){ 
 
-    <div className="rectangle">
-        <h1 className="activities-rectangle__quantity">{user.overview.enrolledCourses}</h1>
-        <p className="activities-rectangle__enrolledCourses">{status.status}</p>
-        <FaGraduationCap className="activities-rectangle__icon" />
-    </div>
-)
+    return (
+        <div className="rectangle">
+
+            <div className="rectangle__quantity">{props.quantity}</div>
+            <div className="rectangle__enrolledCourses">{props.status}</div>
+            <div className="rectangle__icon"> 
+                <i>{props.icon}</i>
+            </div>
+        </div>
+    )
+}
 
 export default Rectangle;

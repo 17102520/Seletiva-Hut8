@@ -38,3 +38,62 @@
     
     white-space: nowrap;
   }
+
+  .home-conteiner .home-rectangle {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    padding: 137px;
+
+  }
+
+  .home-conteiner .home-rectangle .rectangle__quantity {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #595959;
+  }
+
+  .home-conteiner .home-rectangle .rectangle__enrolledCourses {
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #A5A5A5;
+    white-space: nowrap;
+  }
+
+  .home-conteiner .home-rectangle .rectangle__icon {
+    background: #FFFFFF;
+    color: #7D7D7D;
+  }
+
+  .home-conteiner .home-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    margin-left: 300px;
+
+  }
+
+  .home-conteiner .home-cards .card-underRectangle {
+   
+    background: #FAFAFA;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  .home-conteiner .home-cards .card-image {
+    
+    width: 236px;
+    height: 139.61px;
+    left: 449px;
+    top: 337px;
+    
+    background: #FFF1F1;
+    border-radius: 20px 20px 0px 0px;
+  }
