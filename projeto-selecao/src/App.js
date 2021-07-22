@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react'
 import './App.css';
 
 import { getUser } from './Services/request'
+import { getCourses } from './Services/request'
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 import Home from './Conteiners/Home/home'
 import Sidebar from './Components/Sidebar/sidebar'
+import Courses from './Conteiners/Courses/courses'
 
 
 const sidebar = {
@@ -16,6 +18,7 @@ const sidebar = {
 // eslint-disable-next-line no-lone-blocks
 {/*Aquisições da api: Primeiro elas vão para a variável "data" e a partir do useState conseguimos settar na variável user e assim podemos usar. */ }
 const App = () => {
+
   const [user, setUser] = useState([])
 
   useEffect(() => {
@@ -32,20 +35,37 @@ const App = () => {
     getUserData()
   }, [])
 
-// eslint-disable-next-line no-lone-blocks
-{/*Definindo as rotas de cada página do site */ }
-const routes = [
-  {
-    path: '/',
-    exact: true,
-    main: () => <Home user={user}/>
-  },
-  {
-    path: '/courses',
-    main: () => <h1>Courses</h1>,
-  },
-]
+  const [courses, setCourses] = useState([])
+
+  useEffect(() => {
+    const getCoursesData = async () => {
+      try {
+        const { cData } = await getCourses()
+        setCourses(cData)
+      }
+      catch (err) {
+        console.err(err)
+      }
+    }
+
+    getCoursesData()
+  }, [])
+
+  // eslint-disable-next-line no-lone-blocks
+  {/*Definindo as rotas de cada página do site */ }
+  const routes = [
+    {
+      path: '/',
+      exact: true,
+      main: () => <Home user={user} />
+    },
+    {
+      path: '/courses',
+      main: () => <h1><Courses /></h1>,
+    },
+  ]
   return (
+    console.log(courses),
     <div className="App">
       <Router>
         <Sidebar user={user} sidebar={sidebar} />
@@ -54,7 +74,7 @@ const routes = [
             <Route key={index} path={route.path} exact={route.exact} children={<route.main />} />
           ))}
         </Switch>
-        
+
       </Router>
     </div>
 

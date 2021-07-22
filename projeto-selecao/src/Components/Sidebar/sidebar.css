@@ -12,6 +12,7 @@ button {
     cursor: pointer;
 }
 
+
 .conteiner .sidebar {
     position: fixed;
     width: 336px;
@@ -90,6 +91,8 @@ button {
     /* identical to box height */
 
     color: #6A6A6A;
+
+    text-decoration: none;
 }
 
 .conteiner .sidebar .sidebar-menu__area {
@@ -110,4 +113,6 @@ button {
     color: #6A6A6A;
 
     white-space: nowrap;
+
+    text-decoration: none;
 }

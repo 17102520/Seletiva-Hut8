@@ -41,9 +41,10 @@
 
   .home-conteiner .home-rectangle {
     display: flex;
-    justify-content: space-between;
     margin-left: 300px;
     padding: 137px;
+
+    column-gap: 35px;
 
   }
 
@@ -71,28 +72,36 @@
   .home-conteiner .home-rectangle .rectangle__icon {
     background: #FFFFFF;
     color: #7D7D7D;
+
+    width: 48px;
+    height: 48px;
+
+    text-align: center;
+    border-radius: 50%;
+   
+  }
+
+  .home-conteiner .home-rectangle .rectangle__icon i svg{
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
   }
 
   .home-conteiner .home-cards {
     display: flex;
-    justify-content: space-between;
-    padding: 100px;
-    margin-left: 300px;
-
+    column-gap: 33px;
+    margin-left: 440px;
   }
 
   .home-conteiner .home-cards .card-underRectangle {
-   
     background: #FAFAFA;
     border-radius: 0px 0px 20px 20px;
+    height: 60px;
   }
 
   .home-conteiner .home-cards .card-image {
-    
     width: 236px;
     height: 139.61px;
-    left: 449px;
-    top: 337px;
     
     background: #FFF1F1;
     border-radius: 20px 20px 0px 0px;

@@ -5,13 +5,13 @@ function Card(props) {
 
     return (
         <div className="card">
-            <img src={props.image} alt="Imagem Ilustrativa" className="card-image" />
-            <div className="card-underRectangle">
-                <p className="card-subject">{props.course}</p>
-                <h1 className="card-task">{props.title}</h1>
-                <p className="card-deadline">{props.deadline}</p>
+                <img src={props.image} alt="Imagem Ilustrativa" className="card-image" />
+                <div className="card-underRectangle">
+                    <p className="card-subject">{props.course}</p>
+                    <h1 className="card-task">{props.title}</h1>
+                    <p className="card-deadline">{props.deadline}</p>
+                </div>
             </div>
-        </div>
     )
 };
 

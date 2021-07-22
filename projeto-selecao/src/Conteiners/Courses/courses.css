@@ -1,0 +1,18 @@
+
+.courses-container .courses-my{
+    position: absolute;
+    width: 147px;
+    height: 35px;
+    left: 448px;
+    top: 85px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 35px;
+
+    color: #555555;
+
+    white-space: nowrap;
+}
