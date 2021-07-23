@@ -13,8 +13,8 @@ const Sidebar = ({ user, sidebar}) => (
                 <p className="sidebar-avatar__course">{user.course}</p>
             </div>
             <div className="menu">
-                <NavLink to='/' className="sidebar-menu__dashboard" >{sidebar.dashboard}</NavLink>
-                <NavLink to='/courses' className="sidebar-menu__area">{sidebar.myarea}</NavLink>
+                <NavLink exact to='/' className="sidebar-menu__dashboard" activeClassName="sidebar-menu__dashboard-active" >{sidebar.dashboard}</NavLink>
+                <NavLink exact to='/courses' className="sidebar-menu__area" activeClassName="sidebar-menu__area-active">{sidebar.myarea}</NavLink>
             </div>
         </div>
     </div>

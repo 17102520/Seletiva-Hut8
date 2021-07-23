@@ -75,7 +75,7 @@ button {
     color: #727272;
 }
 
-.conteiner .sidebar .sidebar-menu__dashboard{
+.conteiner .sidebar .sidebar-menu__dashboard {
     position: absolute;
     width: 89px;
     height: 25px;
@@ -104,15 +104,32 @@ button {
 
     font-family: 'Nunito', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 18px;
     line-height: 25px;
 
     /* identical to box height */
 
     color: #6A6A6A;
+    
 
     white-space: nowrap;
 
     text-decoration: none;
 }
+
+.conteiner .sidebar .sidebar-menu__area:hover {
+    font-weight: bold !important;
+}
+
+.conteiner .sidebar .sidebar-menu__dashboard:hover {
+    font-weight: bold !important;
+}
+
+.conteiner .sidebar .sidebar-menu__area-active {
+    font-weight: bold;
+}
+.conteiner .sidebar .sidebar-menu__dashboard-active {
+    font-weight: bold;
+}
+
