@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 .courses-container .courses-my{
     position: absolute;
@@ -16,3 +23,28 @@
 
     white-space: nowrap;
 }
+
+.courses-container .courses-cards {
+    display: flex;
+    column-gap: 33px;
+    margin-left: 440px;
+    margin-top: 137px;
+}
+
+.courses-container .courses-cards .card-image {
+    width: 236px;
+    height: 139.61px;
+    
+    background: #FFF1F1;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .courses-container .courses-cards .card-underRectangle {
+    background: #FAFAFA;
+    border-radius: 0px 0px 20px 20px;
+    height: 70px;
+  }
+
+  .courses-container .courses-cards .card-subject {
+      margin-top: 10px;
+  }

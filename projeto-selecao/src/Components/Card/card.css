@@ -62,3 +62,28 @@
     color: #8E8E8E;
 
   }
+
+  .card .card-type {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+
+    color: #737373;
+
+    margin-left: 20px;
+  }
+
+  .card .card-class {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 11px;
+
+    color: #8E8E8E;
+
+    margin-left: 20px;
+    margin-top: 10px;
+  }

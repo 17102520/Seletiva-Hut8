@@ -40,8 +40,8 @@ const App = () => {
   useEffect(() => {
     const getCoursesData = async () => {
       try {
-        const { cData } = await getCourses()
-        setCourses(cData)
+        const { data } = await getCourses()
+        setCourses(data)
       }
       catch (err) {
         console.err(err)
@@ -61,11 +61,11 @@ const App = () => {
     },
     {
       path: '/courses',
-      main: () => <h1><Courses /></h1>,
+      main: () => <Courses courses={courses}/>,
     },
   ]
   return (
-    console.log(courses),
+    console.log(),
     <div className="App">
       <Router>
         <Sidebar user={user} sidebar={sidebar} />

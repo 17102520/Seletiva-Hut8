@@ -6,7 +6,7 @@
     box-sizing: border-box;
   }
   .home-conteiner .home-resume {
-    position: absolute;
+    position: fixed;
     width: 97px;
     height: 35px;
     left: 448px;
@@ -22,7 +22,7 @@
   }
 
   .home-conteiner .home-next{
-    position: absolute;
+    position: fixed;
     width: 237px;
     height: 35px;
     left: 448px;
@@ -96,7 +96,7 @@
   .home-conteiner .home-cards .card-underRectangle {
     background: #FAFAFA;
     border-radius: 0px 0px 20px 20px;
-    height: 60px;
+    height: 70px;
   }
 
   .home-conteiner .home-cards .card-image {
