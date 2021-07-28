@@ -7,7 +7,7 @@
   }
 
 .courses-container .courses-my{
-    position: absolute;
+    position: fixed;
     width: 147px;
     height: 35px;
     left: 448px;
@@ -25,10 +25,11 @@
 }
 
 .courses-container .courses-cards {
-    display: flex;
+    
     column-gap: 33px;
     margin-left: 440px;
     margin-top: 137px;
+    flex-direction: row;
 }
 
 .courses-container .courses-cards .card-image {
@@ -47,4 +48,12 @@
 
   .courses-container .courses-cards .card-subject {
       margin-top: 10px;
+  }
+
+  .courses-container .courses-course_button {
+    text-decoration: none;
+  }
+
+  .courses-container .courses-cards .courses-course_button{
+    display: flex;
   }

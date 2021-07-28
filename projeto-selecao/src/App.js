@@ -4,11 +4,12 @@ import './App.css';
 import { getUser } from './Services/request'
 import { getCourses } from './Services/request'
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 import Home from './Conteiners/Home/home'
 import Sidebar from './Components/Sidebar/sidebar'
 import Courses from './Conteiners/Courses/courses'
+import FetchCourse from './Components/FetchCourse/fetchcourse'
 
 
 const sidebar = {
@@ -51,6 +52,8 @@ const App = () => {
     getCoursesData()
   }, [])
 
+  
+
   // eslint-disable-next-line no-lone-blocks
   {/*Definindo as rotas de cada página do site */ }
   const routes = [
@@ -61,8 +64,13 @@ const App = () => {
     },
     {
       path: '/courses',
-      main: () => <Courses courses={courses}/>,
+      main: () => <Courses courses={courses}/>
     },
+    {
+      path: '/courses/:id',
+      main: () => <FetchCourse/>
+    }
+
   ]
   return (
     console.log(),

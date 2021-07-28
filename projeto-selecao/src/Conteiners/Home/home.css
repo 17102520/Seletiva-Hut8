@@ -91,6 +91,7 @@
     display: flex;
     column-gap: 33px;
     margin-left: 440px;
+    justify-content: flex-start;
   }
 
   .home-conteiner .home-cards .card-underRectangle {
