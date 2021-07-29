@@ -64,6 +64,7 @@ const App = () => {
     },
     {
       path: '/courses',
+      exact: true,
       main: () => <Courses courses={courses}/>
     },
     {

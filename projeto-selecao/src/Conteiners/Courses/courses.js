@@ -26,18 +26,20 @@ const Courses = () => {
     return (
         <div className="courses-container">
             <h1 className="courses-my">Meus Cursos</h1>
-            {cards.map((property) => (
-                <div key={property.id} className="courses-cards">
-                    <NavLink exact to={`/courses/${property.id}`} className="courses-course_button">
-                        <Card
-                            image={property.image}
-                            type={property.type}
-                            course={property.course}
-                            class={property.class}
-                        />
-                    </NavLink>
-                </div>
-            ))}
+            <div className="courses-cards">
+                {cards.map((property) => (
+                    <div key={property.id} className="courses-eachCard">
+                        <NavLink exact to={`/courses/${property.id}`} className="courses-course_button">
+                            <Card
+                                image={property.image}
+                                type={property.type}
+                                course={property.course}
+                                class={property.class}
+                                />
+                        </NavLink>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 };

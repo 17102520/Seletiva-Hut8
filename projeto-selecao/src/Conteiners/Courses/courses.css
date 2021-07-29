@@ -25,11 +25,11 @@
 }
 
 .courses-container .courses-cards {
-    
-    column-gap: 33px;
-    margin-left: 440px;
-    margin-top: 137px;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  margin-left: 440px;
+  column-gap: 33px;
+  margin-top: 137px;
 }
 
 .courses-container .courses-cards .card-image {
