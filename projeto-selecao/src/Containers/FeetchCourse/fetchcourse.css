@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.fetch-container .fetch-usingData .fetch-usingData_resume .fetch-usingData_professor {
+    width: 0px;
+    height:0px;
+
+}
+
+.fetch-container .fetch-usingData .fetch-usingData_resume .fetch-usingData_professor
+.fetch-usingData_professor_div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+
+.fetch-container .fetch-usingData .fetch-usingData_resume .professor-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-left: 600px;
+
+    margin-top: 87px;
+}
+
+.fetch-container .fetch-usingData .fetch-usingData_resume .fetch-usingData_professor .professor_name {
+    width: 120px;
+    height: 27px;
+    margin-top: 87px;
+   
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #727272;
+
+    white-space: nowrap;
+}
+
+.fetch-container .fetch-usingData .fetch-usingData_resume .fetch-usingData_professor .professor_responsible {
+    width: 138px;
+    height: 19px;
+    margin-left: 660px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #727272;
+
+    white-space: nowrap;
+}
+
+
+
+
+
+
+.fetch-container .fetch-usingData .fetch-usingData_resume {
+    margin-left: 448px;
+    width: 1000px;
+    height: 57px;
+    margin-bottom: 110px;
+}
+.fetch-container .fetch-usingData .fetch-usingData_resume_course {
+    width: 320px;
+    height: 35px;
+    margin-top: 85px;
+     
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 35px;
+
+    color: #555555;
+
+    white-space: nowrap;
+}
+.fetch-container .fetch-usingData .fetch-usingData_resume_class {
+    width: 251px;
+    height: 22px;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #737373;
+}
+
+.fetch-container .fetch-usingData .fetch-usingData_rectangle {
+    display: flex;
+    margin-left: 449px;
+    margin-top: 20px;
+    column-gap: 35px;
+}
+
+.fetch-container .fetch-usingData .rectangle__quantity {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #595959;
+  }
+
+  .fetch-container .fetch-usingData .rectangle__enrolledCourses {
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #A5A5A5;
+    white-space: nowrap;
+  }
+
+  .fetch-container .fetch-usingData .rectangle__icon {
+    background: #FFFFFF;
+    color: #7D7D7D;
+
+    width: 48px;
+    height: 48px;
+
+    text-align: center;
+    border-radius: 50%;
+   
+  }
+
+  .fetch-container .fetch-usingData .rectangle__icon i svg{
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
+  }
+
+.fetch-container .fetch-usingData .fetch-usingData_activitie_nextActivities{
+    width: 237px;
+    height: 35px;
+    margin-left: 448px;
+    margin-top: 37px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 35px;
+
+    color: #555555;
+
+    white-space: nowrap;
+}
+
+.fetch-container .fetch-usingData .fetch-usingData_card {
+    margin-left: 449px;
+    margin-top: 20px;
+}
+
+.fetch-container .fetch-usingData .fetch-usingData_card .card-image {
+    width: 236px;
+    height: 139.61px;
+      
+    background: #FFF1F1;
+    border-radius: 20px 20px 0px 0px;
+}
+  
+.fetch-container .fetch-usingData .fetch-usingData_card .card-underRectangle {
+    background: #FAFAFA;
+    border-radius: 0px 0px 20px 20px;
+    height: 70px;
+}

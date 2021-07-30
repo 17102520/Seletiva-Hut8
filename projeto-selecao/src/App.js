@@ -6,10 +6,10 @@ import { getCourses } from './Services/request'
 
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
-import Home from './Conteiners/Home/home'
+import Home from './Containers/Home/home'
 import Sidebar from './Components/Sidebar/sidebar'
-import Courses from './Conteiners/Courses/courses'
-import FetchCourse from './Components/FetchCourse/fetchcourse'
+import Courses from './Containers/Courses/courses'
+import FetchCourse from './Containers/FeetchCourse/fetchcourse'
 
 
 const sidebar = {
@@ -69,7 +69,7 @@ const App = () => {
     },
     {
       path: '/courses/:id',
-      main: () => <FetchCourse/>
+      main: () => <FetchCourse courses={courses}/>
     }
 
   ]
