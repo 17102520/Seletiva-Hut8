@@ -8,9 +8,8 @@ import { GrUnorderedList } from 'react-icons/gr'
 
 import Card from '../../Components/Card/card'
 import Rectangle from '../../Components/Rectangle/rectangle'
-import Professor from '../../Components/Professor/professor'
 
-const Course = ({ courses }) => {
+const Course = () => {
 
     const [data, setData] = useState([]);
     const { id } = useParams();
@@ -30,9 +29,9 @@ const Course = ({ courses }) => {
     };
 
     const recs = [
-        { quantity: data?.overview?.nextActivities, status: "Atividades próximas", icon: <GrUnorderedList/> },
-        { quantity: data?.overview?.credits, status: "Créditos", icon: <FaGraduationCap/> },
-        { quantity: data?.overview?.enrolledStudents, status: "Alunos matrículados", icon: <FaUserGraduate/>  },
+        { quantity: data?.overview?.nextActivities, status: "Atividades próximas", icon: <GrUnorderedList /> },
+        { quantity: data?.overview?.credits, status: "Créditos", icon: <FaGraduationCap /> },
+        { quantity: data?.overview?.enrolledStudents, status: "Alunos matrículados", icon: <FaUserGraduate /> },
     ]
 
     const reclist = recs.map((rec, index) => (
@@ -44,14 +43,6 @@ const Course = ({ courses }) => {
         />
     ))
 
-    // const professorList = data?.teacher?.map((prof, index) => (
-    //     <Professor
-    //         avatar={prof.avatar}
-    //         name={prof.name}
-    //         key={index}
-    //      />
-    //  ))
-
     const cardsList = data?.nextActivities?.map((card, index) => (
         <Card
             image={card.image}
@@ -59,8 +50,8 @@ const Course = ({ courses }) => {
             title={card.title}
             deadline={card.deadline}
             key={index}
-         />
-     ))
+        />
+    ))
 
     return (
         <div key={data.id} className="fetch-container">
@@ -85,9 +76,9 @@ const Course = ({ courses }) => {
                     <h1 className="fetch-usingData_activitie_nextActivities">Próximas atividades</h1>
                 </div>
                 <div className="fetch-usingData_card">{cardsList}</div>
-            </div>   
-        </div>  
-    );    
+            </div>
+        </div>
+    );
 };
 
 export default Course;
