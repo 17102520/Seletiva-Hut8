@@ -66,15 +66,19 @@ const Course = ({ courses }) => {
         <div key={data.id} className="fetch-container">
             <div className="fetch-usingData">
                 <div className="fetch-usingData_resume">
-                    <div className="fetch-usingData_professor">
-                        <div className="fetch-usingData_professor_div">
+                    <div className="fetch-usingData_resume_data">
+                        <h1 className="fetch-usingData_resume_course">{data?.course}</h1>
+                        <p className="fetch-usingData_resume_class">{data?.class}</p>
+                    </div>
+                    <div className="fetch-usingData_resume_professor">
+                        <div className="fetch-usingData_resume_professor_img">
                             <img src={data?.teacher?.avatar} alt="Foto de perfil" className="professor-avatar" />
-                            <h1 className="professor_name">{data?.teacher?.name}</h1>
                         </div>
+                        <div className="fetch-usingData_resume_professor_data">
+                            <h1 className="professor_name">{data?.teacher?.name} </h1>
                             <p className="professor_responsible">Professor responsável</p>
-                        </div>      
-                    <h1 className="fetch-usingData_resume_course">{data?.course}</h1>
-                    <p className="fetch-usingData_resume_class">{data?.class}</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="fetch-usingData_rectangle">{reclist}</div>
                 <div className="fetch-usingData_activitie">

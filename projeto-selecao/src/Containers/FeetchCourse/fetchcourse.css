@@ -6,77 +6,19 @@
     box-sizing: border-box;
   }
 
-.fetch-container .fetch-usingData .fetch-usingData_resume .fetch-usingData_professor {
-    width: 0px;
-    height:0px;
-
-}
-
-.fetch-container .fetch-usingData .fetch-usingData_resume .fetch-usingData_professor
-.fetch-usingData_professor_div {
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
-}
-
-
-.fetch-container .fetch-usingData .fetch-usingData_resume .professor-avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    margin-left: 600px;
-
-    margin-top: 87px;
-}
-
-.fetch-container .fetch-usingData .fetch-usingData_resume .fetch-usingData_professor .professor_name {
-    width: 120px;
-    height: 27px;
-    margin-top: 87px;
-   
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 27px;
-
-    color: #727272;
-
-    white-space: nowrap;
-}
-
-.fetch-container .fetch-usingData .fetch-usingData_resume .fetch-usingData_professor .professor_responsible {
-    width: 138px;
-    height: 19px;
-    margin-left: 660px;
-
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-
-    color: #727272;
-
-    white-space: nowrap;
-}
-
-
-
-
-
-
 .fetch-container .fetch-usingData .fetch-usingData_resume {
     margin-left: 448px;
     width: 1000px;
     height: 57px;
-    margin-bottom: 110px;
-}
-.fetch-container .fetch-usingData .fetch-usingData_resume_course {
-    width: 320px;
-    height: 35px;
     margin-top: 85px;
-     
+
+    display: flex;
+    column-gap: 246px;
+}
+
+.fetch-container .fetch-usingData .fetch-usingData_resume_course {
+    width: 330px;
+    height: 35px;
 
     font-family: 'Nunito';
     font-style: normal;
@@ -101,10 +43,55 @@
     color: #737373;
 }
 
+.fetch-usingData_resume_professor {
+    display: flex;
+    column-gap: 9px;
+}
+
+.professor-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+}
+
+.professor_name {
+    width: 120px;
+    height: 27px;
+   
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #727272;
+
+    white-space: nowrap;
+}
+
+.professor_responsible {
+    width: 138px;
+    height: 19px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #727272;
+
+    white-space: nowrap;
+}
+
+
+
+
 .fetch-container .fetch-usingData .fetch-usingData_rectangle {
     display: flex;
     margin-left: 449px;
-    margin-top: 20px;
+    margin-top: 25px;
     column-gap: 35px;
 }
 
